@@ -16,6 +16,13 @@ Just add the following to your `Cargo.toml`:
 coincbc-sys = "0.2"
 ```
 
+## Configure
+
+The following Cargo features are supported:
+
+* `default` to build metadatahreaded `Cbc`;
+* `parallel` to build `Cbc` with `pthread`;
+
 ## Library Linking
 if you want to know the detail about how it compile or link the Cbc, please see [Cbc-src].
 
