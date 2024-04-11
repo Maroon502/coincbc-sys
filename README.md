@@ -2,18 +2,19 @@
 
 [![Package][package-img]][package-url] [![Documentation][documentation-img]][documentation-url] [![License][license-img]][license-url]
 
-coincbc-sys crate is a *-sys crate. The package provides Low-level bindings to the [Cbc] library.
+`coincbc-sys` crate is a *-sys crate. The package provides Low-level bindings to the [Cbc] library.
 
 By this package, you don't need to worry about installing Cbc in the system, and it's a package for **all platforms**.
 
 Cbc (Coin-or linear programming) is an open-source linear programming solver. It is primarily meant to be used as a callable library, but a basic, stand-alone executable version is also available.
 
 ## Usage
+
 Just add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-coincbc-sys = "0.2"
+coincbc-sys = "\*"
 ```
 
 ## Configure
@@ -23,7 +24,8 @@ The following Cargo features are supported:
 * `default` to build metadatahreaded `Cbc`;
 * `parallel` to build `Cbc` with `pthread`;
 
-## Library Linking
+## Library Linking and Cross Compile
+
 if you want to know the detail about how it compile or link the Cbc, please see [Cbc-src].
 
 ## Contribution
